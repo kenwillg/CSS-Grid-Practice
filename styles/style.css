@@ -1,0 +1,97 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 1.2fr 0.6fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+  
+  }
+  
+  nav{
+    background-color: rgb(31, 175, 204);
+    grid-area: nav;
+  }
+  
+  main{
+    background-color:aquamarine;
+    grid-area: main;
+  }
+  
+  #sidebar{
+    grid-area: sidebar;
+  }
+  
+  #content1{
+    background-color: rgb(106, 147, 183);
+    grid-area: content1;
+  }
+  
+  #content2{
+    background-color: rgb(215, 151, 218);
+    grid-area: content2;
+  }
+  
+  #content3{
+    background-color: rgb(106, 183, 128);
+    grid-area: content3;
+  }
+  
+  footer{
+    background-color: rgb(67, 44, 44);
+    grid-area: footer;
+  }
+
+@media only screen and (max-width: 550px){
+  .container{
+    grid-template-columns: 1fr 1fr;
+    width: 100vh;
+    height: 100vh;
+    grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav"
+    "sidebar sidebar"
+    "main main"
+    "content1 content2"
+    "content3 content3"
+    "footer footer"
+  }
+
+  nav{
+    background-color: rgb(31, 175, 204);
+    grid-area: nav;
+  }
+  
+  main{
+    background-color:aquamarine;
+    grid-area: main;
+  }
+  
+  #sidebar{
+    grid-area: sidebar;
+  }
+  
+  #content1{
+    background-color: rgb(106, 147, 183);
+    grid-area: content1;
+  }
+  
+  #content2{
+    background-color: rgb(215, 151, 218);
+    grid-area: content2;
+  }
+  
+  #content3{
+    background-color: rgb(106, 183, 128);
+    grid-area: content3;
+  }
+  
+  footer{
+    background-color: rgb(67, 44, 44);
+    grid-area: footer;
+  }
+}
